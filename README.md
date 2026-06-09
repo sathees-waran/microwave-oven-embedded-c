@@ -34,7 +34,9 @@ MICROWAVE/
 | Microcontroller | PIC16F877A |
 | Display | HD44780 16x4 Character LCD (CLCD) |
 | Input | 4x3 Matrix Keypad (SW1–SW12) |
-| Output | Fan (via relay), Buzzer |
+| Output | Fan (via relay), Buzzer | 
+| IDE | MPLAB X IDE |
+| Compiler | XC8 Compiler |
 | Simulator | PICSIMLAB 4 |
 | Clock | 20 MHz |
 
@@ -127,28 +129,26 @@ Power ON
 
 ---
 
-##  How to Run (PICSIMLAB 4)
+##  How to Run
 
 1. Clone the repository:
-   ```bash
+```bash
    git clone https://github.com/sathees-waran/microwave-oven-embedded-c.git
-   ```
+```
 
-2. Open **PICSIMLAB 4** and load the board schematic from:
-   ```
-   docs/board4_Schematic_v0.8.8.pdf
-   ```
+2. Open **MPLAB X IDE** and import the source files (`*.c`, `*.h`)
 
-3. Build the project using the Makefile:
-   ```bash
-   make
-   ```
+3. Select **XC8 Compiler** and set the target device to **PIC16F877A**
 
-4. Load the generated `.hex` file into PICSIMLAB 4 and run the simulation.
+4. Build the project to generate the `.hex` file
+
+5. Open **PICSIMLAB 4**, load the board configuration and select the generated `.hex` file
+
+6. Run the simulation — refer to the board schematic:
 
 ---
 
-## 📄 References & Documentation
+##  References & Documentation
 
 | Document | Location |
 |---|---|
@@ -159,10 +159,12 @@ Power ON
 
 ---
 
-## 🏷️ Technologies Used
+##  Technologies Used
 
 ![Embedded C](https://img.shields.io/badge/Embedded_C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![PIC](https://img.shields.io/badge/PIC16F877A-Microchip-red?style=for-the-badge)
+![MPLAB](https://img.shields.io/badge/MPLAB_X_IDE-Microchip-red?style=for-the-badge)
+![XC8](https://img.shields.io/badge/XC8_Compiler-Microchip-orange?style=for-the-badge)
 ![PICSIMLAB](https://img.shields.io/badge/PICSIMLAB_4-Simulator-blue?style=for-the-badge)
 
 ---
