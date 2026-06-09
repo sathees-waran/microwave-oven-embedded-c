@@ -1,10 +1,10 @@
-# 🍽️ Microwave Oven Controller — Embedded C (PIC16F877A)
+# Microwave Oven Controller — Embedded C (PIC16F877A)
 
 A fully functional **Microwave Oven simulation** built using **Embedded C** on a **PIC16F877A microcontroller**, simulated on **PICSIMLAB 4**. The system replicates real microwave oven behavior with multiple cooking modes, timer control, and a character LCD interface.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 MICROWAVE/
@@ -27,7 +27,7 @@ MICROWAVE/
 
 ---
 
-## ⚙️ Hardware Components
+## Hardware Components
 
 | Component | Details |
 |---|---|
@@ -40,7 +40,7 @@ MICROWAVE/
 
 ---
 
-## 🧠 System Block Diagram
+## System Block Diagram
 
 ```
                         ┌─────────────────────┐
@@ -56,33 +56,33 @@ MICROWAVE/
 
 ---
 
-## 🔧 Cooking Modes
+## Cooking Modes
 
-### 1. 🟢 Micro (Macro) Mode — `KEY1`
+### 1.  Micro (Macro) Mode — `KEY1`
 - Displays power level (`Power = XYZ W`)
 - After 3 seconds, prompts user to set cooking time (MM:SS)
 - Keys `0–9` to enter time, `*` to clear, `#` to confirm and start
 - Displays remaining time with Start/Resume (4), Pause (5), Stop (6) controls
 
-### 2. 🔥 Grill Mode — `KEY2`
+### 2.  Grill Mode — `KEY2`
 - Directly prompts user to set cooking time (MM:SS)
 - Keys `0–9` to enter time, `*` to clear, `#` to confirm and start
 - Displays remaining time with Start/Resume (4), Pause (5), Stop (6) controls
 
-### 3. 🌀 Convection Mode — `KEY3`
+### 3.  Convection Mode — `KEY3`
 - Prompts user to set temperature (°C)
 - After confirmation (`#`), starts **Pre-Heating** phase with countdown
 - Once pre-heating completes, prompts for cooking time
 - Full Start/Resume/Pause/Stop controls
 
-### 4. ⚡ Quick Start — `KEY4`
+### 4.  Quick Start — `KEY4`
 - Starts cooking immediately with **default 30 seconds**
 - Each additional `KEY4` press adds 30 seconds to the timer
 - Full Start/Resume/Pause/Stop controls
 
 ---
 
-## 🖥️ LCD Screen Flow
+##  LCD Screen Flow
 
 ```
 Power ON
@@ -111,7 +111,7 @@ Power ON
 
 ---
 
-## 🎮 Keypad Mapping
+##  Keypad Mapping
 
 | Key | Function |
 |---|---|
@@ -127,7 +127,7 @@ Power ON
 
 ---
 
-## 🚀 How to Run (PICSIMLAB 4)
+##  How to Run (PICSIMLAB 4)
 
 1. Clone the repository:
    ```bash
@@ -167,13 +167,9 @@ Power ON
 
 ---
 
-## 👤 Author
+##  Author
 
 **Satheeswaran**
 - GitHub: [@sathees-waran](https://github.com/sathees-waran)
 
 ---
-
-## 📝 License
-
-This project is developed as part of **Emertxe Information Technologies** Embedded C Internship Training Program.
