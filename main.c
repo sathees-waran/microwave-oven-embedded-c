@@ -1,4 +1,4 @@
-/*
+/* Name: Satheeswaran M
  * File:   main.c
  */
 
